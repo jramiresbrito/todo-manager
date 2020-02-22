@@ -6,7 +6,7 @@ class Task
   end
 
   def completed?
-    return @completed
+    @completed
   end
 
   def mark_as_complete

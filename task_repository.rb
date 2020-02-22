@@ -10,6 +10,6 @@ class TaskRepository
   end
 
   def find(index)
-    return @tasks[index]
+    @tasks[index]
   end
 end
