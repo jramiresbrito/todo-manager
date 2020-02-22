@@ -1,10 +1,11 @@
 require_relative 'task'
 require_relative 'task_repository'
+require_relative 'view'
 
 class Controller
-  def initialize(repository, view)
-    @repository = repository
-    @view = view
+  def initialize
+    @repository = TaskRepository.new
+    @view = View.new
   end
 
   def add_task

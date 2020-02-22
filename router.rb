@@ -1,6 +1,8 @@
+require_relative 'controller'
+
 class Router
-  def initialize(controller)
-    @controller = controller
+  def initialize
+    @controller = Controller.new
   end
 
   def run
