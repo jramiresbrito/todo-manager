@@ -11,6 +11,7 @@ class Router
       puts '1 - Add a task'
       puts '2 - List tasks'
       puts '3 - Mark task as complete'
+      puts '0 - To Exit'
       choice = gets.chomp.to_i
 
       case choice
@@ -20,6 +21,8 @@ class Router
         @controller.list_tasks
       when 3
         @controller.mark_task_as_complete
+      when 0
+        exit
       else
         puts 'Invalid Option.'
       end
