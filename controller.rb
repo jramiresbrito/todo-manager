@@ -1,6 +1,6 @@
 require_relative 'task'
-require_relative 'task_repository'
 require_relative 'view'
+require_relative 'task_repository'
 
 class Controller
   def initialize
@@ -23,8 +23,5 @@ class Controller
     index = @view.ask_for_task_index
     task = @repository.find(index)
     task.mark_as_complete
-  end
-
-  def remove_task
   end
 end
