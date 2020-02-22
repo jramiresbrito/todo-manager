@@ -8,4 +8,8 @@ class TaskRepository
   def add(task)
     @tasks << task
   end
+
+  def find(index)
+    return @tasks[index]
+  end
 end

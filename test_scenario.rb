@@ -10,7 +10,7 @@ controller = Controller.new(repository, view)
 controller.add_task
 controller.add_task
 controller.list_tasks
-controller.add_task
+controller.mark_task_as_complete
 controller.list_tasks
 
 # p repository
