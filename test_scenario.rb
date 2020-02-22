@@ -1,12 +1,16 @@
 require_relative 'task'
 require_relative 'task_repository'
+require_relative 'view'
+require_relative 'controller'
 
 repository = TaskRepository.new
-task1 = Task.new('Study MVC')
-task2 = Task.new('Make To Do Manager')
+view = View.new
+controller = Controller.new(repository, view)
 
-repository.add(task1)
-repository.add(task2)
+controller.add_task
+controller.add_task
+controller.list_tasks
+controller.add_task
+controller.list_tasks
 
-p repository
-
+# p repository
